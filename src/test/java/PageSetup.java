@@ -19,9 +19,9 @@ public class PageSetup {
         driver.get("https://ultimateqa.com/simple-html-elements-for-automation/");
     }
 
-//    @AfterEach
-//    public void teardown() {
-//        // zmienne lokalne i globalne
-//        driver.quit();
-//    }
+    @AfterEach
+    public void teardown() {
+        // zmienne lokalne i globalne
+        driver.quit();
+    }
 }

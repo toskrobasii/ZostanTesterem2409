@@ -35,7 +35,12 @@ public class UltimateQATest extends PageSetup {
 
         WebElement buttonEmailMe = driver.findElementByName("et_builder_submit_button");
         buttonEmailMe.click();
-        
+
+        Thread.sleep(3000);
+
+        WebElement thanksText = driver.findElementByXPath("//div[@class='et-pb-contact-message']/p");
+        Assertions.assertEquals("Thanks for contacting us", thanksText.getText());
+
     }
 
 
