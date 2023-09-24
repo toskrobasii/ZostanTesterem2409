@@ -35,6 +35,7 @@ public class UltimateQATest extends PageSetup {
 
         WebElement buttonEmailMe = driver.findElementByName("et_builder_submit_button");
         buttonEmailMe.click();
+        
     }
 
 
